@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Temperatura</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <h2>Conversor de Temperatura</h2>
+  
+  <label for="valor">Valor:</label>
+  <input type="number" id="valor" placeholder="Digite o valor" onkeydown="if (event.key === 'Enter') converterTemperatura()">
+  
+  <br>
+  
+  <label for="unidade">Unidade:</label>
+  <select id="unidade" onchange="converterTemperatura()">
+    <option value="celsius">Celsius</option>
+    <option value="fahrenheit">Fahrenheit</option>
+    <option value="kelvin">Kelvin</option>
+  </select>
+  
+  <br>
+  
+  <label for="resultadoFahrenheit">Fahrenheit:</label>
+  <input type="text" id="resultadoFahrenheit" placeholder="Resultado em Fahrenheit" readonly>
+  
+  <br>
+  
+  <label for="resultadoKelvin">Kelvin:</label>
+  <input type="text" id="resultadoKelvin" placeholder="Resultado em Kelvin" readonly>
+  
+  <br>
+  
+  <label for="resultadoCelsius">Celsius:</label>
+  <input type="text" id="resultadoCelsius" placeholder="Resultado em Celsius" readonly>  
+
+  <script src="Script.js"></script>
+</body>
+</html>
